@@ -35,7 +35,7 @@ func init() {
 
 var mtrtimeCmd = &cobra.Command{
 	Use:   "time",
-	Short: "Check out the MTR arrive time for the next 3 trains",
+	Short: "Check out the MTR arrive time for the next 2 trains",
 	Long:  `MTR Arrive time for the next 2 trains`,
 	Run: func(cmd *cobra.Command, args []string) {
 		//fmt.Printf("hi %s, %s", station, line)
