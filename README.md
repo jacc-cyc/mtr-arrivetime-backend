@@ -1,5 +1,5 @@
 # MTR-ArriveTime-Backend
-a CLI app with [cobra](https://github.com/spf13/cobra) which can check the time of arrival of the coming 3 trains
+a CLI app with [cobra](https://github.com/spf13/cobra) which can check the time of arrival of the coming 2 trains
 
 # Installation
 `go get -u github.com/spf13/cobra/cobra`
