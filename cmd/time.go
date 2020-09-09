@@ -36,7 +36,7 @@ func init() {
 var mtrtimeCmd = &cobra.Command{
 	Use:   "time",
 	Short: "Check out the MTR arrive time for the next 3 trains",
-	Long:  `MTR Arrive time for the next 3 trains`,
+	Long:  `MTR Arrive time for the next 2 trains`,
 	Run: func(cmd *cobra.Command, args []string) {
 		//fmt.Printf("hi %s, %s", station, line)
 		//line=WRL&sta=YUL
@@ -106,7 +106,7 @@ var mtrtimeCmd = &cobra.Command{
 
 		if bool_up {
 			fmt.Printf("Up time:\n")
-			for i := 0; i < 3; i++ {
+			for i := 0; i < 2; i++ {
 				value := reflect.ValueOf(up)
 				//fmt.Println(value.Len())
 				c := value.Index(i).Interface().(map[string]interface{})
@@ -119,7 +119,7 @@ var mtrtimeCmd = &cobra.Command{
 
 		if bool_down {
 			fmt.Printf("Down time:\n")
-			for i := 0; i < 3; i++ {
+			for i := 0; i < 2; i++ {
 				value := reflect.ValueOf(down)
 				c := value.Index(i).Interface().(map[string]interface{})
 				fmt.Println(c)
